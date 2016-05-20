@@ -1,0 +1,445 @@
+<!--
+  UW Mentour Project
+  search page
+  Dajia Bao
+  Xuli zhou
+  Jeff Ma
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mentour</title>
+    <link rel="stylesheet" type="text/css" href="css/com.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href="home.html">Mentour</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="login.html">Log in</a></li>
+                    <li><a href="signUp.html">Sign up</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="col-xs-12" style="height:70px;"></div>
+
+    <div class="container">
+      <form action="/" method="post">
+      <div class="row"> <!--section 1-->
+        <div class="col-md-6"> <!--top left-->
+          <div style="color:#4b2e83;font-size:15pt;padding-top:5px;margin-bottom:5px;">
+            Search for
+          </div>
+          <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Mentee
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Mentor
+          </label>
+        </div>
+      </div>
+
+      <hr style="margin-bottom:20px;margin-top:20px;"/>
+
+      <div class="row"> <!--section 2-->
+        <div class="col-md-6"> <!--top left-->
+          <div style="color:#4b2e83;font-size:15pt;padding-top:5px;margin-bottom:5px;">
+            Mentoring Type
+          </div>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox1" value="option1"> Academic
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox2" value="option2"> Personal
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox3" value="option3"> Career
+          </label>
+        </div>
+
+        <div class="col-md-6"> <!--top right-->
+          <div style="color:#4b2e83;font-size:15pt;padding-top:5px;margin-bottom:5px;">
+            UW Member Status
+          </div>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox1" value="option1"> Student
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox2" value="option2"> Alumni
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox3" value="option3"> Faculty
+          </label>
+        </div>
+      </div>
+
+      <hr style="margin-bottom:20px;margin-top:20px;"/>
+
+      <div class="row"> <!--section 3-->
+        <div class="col-md-4 col-md-offset-4">
+          <div class="form-group">
+          <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              All languages <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#">English</a></li>
+              <li><a href="#">French</a></li>
+              <li><a href="#">Spanish</a></li>
+              <li><a href="#">Chinese</a></li>
+            </ul>
+          </div> <!--close for btn group-->
+          <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              All Industries <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Business</a></li>
+              <li><a href="#">Health Care</a></li>
+              <li><a href="#">Science and Research</a></li>
+              <li><a href="#">Technology</a></li>
+              <li><a href="#">Education</a></li>
+              <li><a href="#">Other</a></li>
+              <li><a href="#">None</a></li>
+            </ul>
+          </div> <!--close for btn group-->
+          </div>
+
+        </div>
+      </div>
+      <hr style="margin-bottom:20px;margin-top:20px;"/>
+
+      <div class="row"> <!--section 4-->
+        <div class="col-md-4 col-md-offset-4">
+          <button type="submit" class="btn btn-info"> Search for amazing Mentor / Mentee </button>
+        </div>
+      </div>
+      </form>
+
+      <hr style="margin-bottom:20px;margin-top:20px;"/>
+
+      <div class="row"> <!--Result section-->
+
+      <div style="margin-bottom:30px;"></div>
+
+      <div class="row"> <!--bottom row 1-->
+        <div class="col-md-6" style="border-radius:25px;border:1px solid #d9d9d9;padding:25px;"> <!--row left-->
+          <div class="row"> <!--pic/description row-->
+          <div class="col-md-4"> <!-- persona left-->
+            <img src="http://students.washington.edu/xulizhou/info_capstone/final_version/images/profile/u282.jpg"
+                alt="pc1" style="width:150px;height:180px;"/>
+          </div>
+          <div class="col-md-8"> <!--persona right-->
+            <div style="color:#4b2e83;font-size:15pt;padding-top:10px;margin-bottom:20px;">
+              <img src="http://metro.kingcounty.gov/up/spclevent/huskies/images/uw_logo.png"
+                  alt="pc1" style="width:42px;height:29px;"/> Jeff Ma
+            </div>
+
+            <div class="row">
+              <div class="col-md-6"><strong>Student:</strong></div>
+              <div class="col-md-6">UW Seattle</div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><strong>Language:</strong></div>
+              <div class="col-md-6">English</div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><strong>Major:</strong></div>
+              <div class="col-md-6">Informatcs</div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><strong>Industry:</strong></div>
+              <div class="col-md-6">Automotive</div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><strong>Mentoring:</strong></div>
+              <div class="col-md-6">Personal</div>
+            </div>
+          </div>
+          </div> <!--close for pic/description row-->
+
+          <div class="row"> <!--intro row-->
+            <div style="text-muted;margin-top:10px;">
+              I am currently a senior at the University of Washington
+              in the informatics program. As a student I have struggled throughout
+              my academic career. I never graduated from high school.......
+            </div>
+          </div> <!-- close for intro row-->
+        </div> <!--close for row left-->
+
+        <div class="col-md-6" style="border-radius:25px;border:2px solid #d9d9d9;padding:25px;"> <!--row right-->
+          <div class="row"> <!--pic/description row-->
+          <div class="col-md-4"> <!-- persona left-->
+            <img src="http://students.washington.edu/xulizhou/info_capstone/final_version/images/profile/u282.jpg"
+                alt="pc1" style="width:150px;height:180px;"/>
+          </div>
+          <div class="col-md-8"> <!--persona right-->
+            <div style="color:#4b2e83;font-size:15pt;padding-top:10px;margin-bottom:20px;">
+              <img src="http://metro.kingcounty.gov/up/spclevent/huskies/images/uw_logo.png"
+                  alt="pc1" style="width:42px;height:29px;"/> Jeff Ma
+            </div>
+
+            <div class="row">
+              <div class="col-md-6"><strong>Student:</strong></div>
+              <div class="col-md-6">UW Seattle</div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><strong>Language:</strong></div>
+              <div class="col-md-6">English</div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><strong>Major:</strong></div>
+              <div class="col-md-6">Informatcs</div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><strong>Industry:</strong></div>
+              <div class="col-md-6">Automotive</div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><strong>Mentoring:</strong></div>
+              <div class="col-md-6">Personal</div>
+            </div>
+          </div>
+          </div> <!--close for pic/description row-->
+
+          <div class="row"> <!--intro row-->
+            <div style="text-muted;margin-top:10px;">
+              I am currently a senior at the University of Washington
+              in the informatics program. As a student I have struggled throughout
+              my academic career. I never graduated from high school.......
+            </div>
+          </div> <!-- close for intro row-->
+        </div> <!--close for row right-->
+      </div>
+
+      <div style="margin-bottom:30px;"></div>
+
+      <div class="row"> <!--bottom row 2-->
+        <div class="col-md-6" style="border-radius:25px;border:1px solid #d9d9d9;padding:25px;"> <!--row left-->
+          <div class="row"> <!--pic/description row-->
+          <div class="col-md-4"> <!-- persona left-->
+            <img src="http://students.washington.edu/xulizhou/info_capstone/final_version/images/profile/u282.jpg"
+                alt="pc1" style="width:150px;height:180px;"/>
+          </div>
+          <div class="col-md-8"> <!--persona right-->
+            <div style="color:#4b2e83;font-size:15pt;padding-top:10px;margin-bottom:20px;">
+              <img src="http://metro.kingcounty.gov/up/spclevent/huskies/images/uw_logo.png"
+                  alt="pc1" style="width:42px;height:29px;"/> Jeff Ma
+            </div>
+
+            <div class="row">
+              <div class="col-md-6"><strong>Student:</strong></div>
+              <div class="col-md-6">UW Seattle</div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><strong>Language:</strong></div>
+              <div class="col-md-6">English</div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><strong>Major:</strong></div>
+              <div class="col-md-6">Informatcs</div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><strong>Industry:</strong></div>
+              <div class="col-md-6">Automotive</div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><strong>Mentoring:</strong></div>
+              <div class="col-md-6">Personal</div>
+            </div>
+          </div>
+          </div> <!--close for pic/description row-->
+
+          <div class="row"> <!--intro row-->
+            <div style="text-muted;margin-top:10px;">
+              I am currently a senior at the University of Washington
+              in the informatics program. As a student I have struggled throughout
+              my academic career. I never graduated from high school.......
+            </div>
+          </div> <!-- close for intro row-->
+        </div> <!--close for row left-->
+
+        <div class="col-md-6" style="border-radius:25px;border:2px solid #d9d9d9;padding:25px;"> <!--row right-->
+          <div class="row"> <!--pic/description row-->
+          <div class="col-md-4"> <!-- persona left-->
+            <img src="http://students.washington.edu/xulizhou/info_capstone/final_version/images/profile/u282.jpg"
+                alt="pc1" style="width:150px;height:180px;"/>
+          </div>
+          <div class="col-md-8"> <!--persona right-->
+            <div style="color:#4b2e83;font-size:15pt;padding-top:10px;margin-bottom:20px;">
+              <img src="http://metro.kingcounty.gov/up/spclevent/huskies/images/uw_logo.png"
+                  alt="pc1" style="width:42px;height:29px;"/> Jeff Ma
+            </div>
+
+            <div class="row">
+              <div class="col-md-6"><strong>Student:</strong></div>
+              <div class="col-md-6">UW Seattle</div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><strong>Language:</strong></div>
+              <div class="col-md-6">English</div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><strong>Major:</strong></div>
+              <div class="col-md-6">Informatcs</div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><strong>Industry:</strong></div>
+              <div class="col-md-6">Automotive</div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><strong>Mentoring:</strong></div>
+              <div class="col-md-6">Personal</div>
+            </div>
+          </div>
+          </div> <!--close for pic/description row-->
+
+          <div class="row"> <!--intro row-->
+            <div style="text-muted;margin-top:10px;">
+              I am currently a senior at the University of Washington
+              in the informatics program. As a student I have struggled throughout
+              my academic career. I never graduated from high school.......
+            </div>
+          </div> <!-- close for intro row-->
+        </div> <!--close for row right-->
+      </div>
+
+      <div style="margin-bottom:30px;"></div>
+
+      <div class="row"> <!--bottom row 1-->
+        <div class="col-md-6" style="border-radius:25px;border:1px solid #d9d9d9;padding:25px;"> <!--row left-->
+          <div class="row"> <!--pic/description row-->
+          <div class="col-md-4"> <!-- persona left-->
+            <img src="http://students.washington.edu/xulizhou/info_capstone/final_version/images/profile/u282.jpg"
+                alt="pc1" style="width:150px;height:180px;"/>
+          </div>
+          <div class="col-md-8"> <!--persona right-->
+            <div style="color:#4b2e83;font-size:15pt;padding-top:10px;margin-bottom:20px;">
+              <img src="http://metro.kingcounty.gov/up/spclevent/huskies/images/uw_logo.png"
+                  alt="pc1" style="width:42px;height:29px;"/> Jeff Ma
+            </div>
+
+            <div class="row">
+              <div class="col-md-6"><strong>Student:</strong></div>
+              <div class="col-md-6">UW Seattle</div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><strong>Language:</strong></div>
+              <div class="col-md-6">English</div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><strong>Major:</strong></div>
+              <div class="col-md-6">Informatcs</div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><strong>Industry:</strong></div>
+              <div class="col-md-6">Automotive</div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><strong>Mentoring:</strong></div>
+              <div class="col-md-6">Personal</div>
+            </div>
+          </div>
+          </div> <!--close for pic/description row-->
+
+          <div class="row"> <!--intro row-->
+            <div style="text-muted;margin-top:10px;">
+              I am currently a senior at the University of Washington
+              in the informatics program. As a student I have struggled throughout
+              my academic career. I never graduated from high school.......
+            </div>
+          </div> <!-- close for intro row-->
+        </div> <!--close for row left-->
+
+        <div class="col-md-6" style="border-radius:25px;border:2px solid #d9d9d9;padding:25px;"> <!--row right-->
+          <div class="row"> <!--pic/description row-->
+          <div class="col-md-4"> <!-- persona left-->
+            <img src="http://students.washington.edu/xulizhou/info_capstone/final_version/images/profile/u282.jpg"
+                alt="pc1" style="width:150px;height:180px;"/>
+          </div>
+          <div class="col-md-8"> <!--persona right-->
+            <div style="color:#4b2e83;font-size:15pt;padding-top:10px;margin-bottom:20px;">
+              <img src="http://metro.kingcounty.gov/up/spclevent/huskies/images/uw_logo.png"
+                  alt="pc1" style="width:42px;height:29px;"/> Jeff Ma
+            </div>
+
+            <div class="row">
+              <div class="col-md-6"><strong>Student:</strong></div>
+              <div class="col-md-6">UW Seattle</div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><strong>Language:</strong></div>
+              <div class="col-md-6">English</div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><strong>Major:</strong></div>
+              <div class="col-md-6">Informatcs</div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><strong>Industry:</strong></div>
+              <div class="col-md-6">Automotive</div>
+            </div>
+            <div class="row">
+              <div class="col-md-6"><strong>Mentoring:</strong></div>
+              <div class="col-md-6">Personal</div>
+            </div>
+          </div>
+          </div> <!--close for pic/description row-->
+
+          <div class="row"> <!--intro row-->
+            <div style="text-muted;margin-top:10px;">
+              I am currently a senior at the University of Washington
+              in the informatics program. As a student I have struggled throughout
+              my academic career. I never graduated from high school.......
+            </div>
+          </div> <!-- close for intro row-->
+        </div> <!--close for row right-->
+      </div>
+
+      </div> <!--close for result section-->
+    </div> <!--close for container-->
+    <div class="col-xs-12" style="height:20px;"></div>
+
+    <div style="margin-bottom:50px;"></div>
+    <div class="footer">
+        <div class="container clearfix">
+            <div class="left">
+                <div class="dl dl3">
+                    <div class="dt">Site Map</div>
+                    <div class="dd">
+                        <a href="home.html">Home</a>
+                        <a href="signUp.html">Sign up</a>
+                        <a href="background.html">Background</a>
+                        <a href="profile.html">Profile</a>
+                        <a href="search.html">Search</a>
+                        <a href="login.html">Login</a>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="dl dl4">
+                    <div class="dt">Follow Us</div>
+                    <a href="https://www.facebook.com/"><i class="fa fa-facebook-official" style="font-size:36px"></i></a>
+                    <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter-square" style="font-size:36px"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fa fa-youtube" style="font-size:36px"></i></a>
+                </div>
+            </div>
+        </div>
+    </div> <!--close for the footer-->
+  </body>
+</html>
