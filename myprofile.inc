@@ -6,6 +6,16 @@
   Jeff Ma
 -->
 
+ <?php
+  if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+    // Connect to the database
+    include_once("mysqlconnect.php");
+    $MentoringType = mysqli_real_escape_string($connection, $_POST['MentoringType']);
+    $UWStatus = mysqli_real_escape_string($connection, $_POST['UWStatus']);
+    
+?>
+
  <div class="container" style="margin-top:80px;margin-bottom:50px;">
     <form action="myprofile.php" method="post" id="myProfile">
       <div class="col-md-6 col-md-offset-3">
@@ -53,7 +63,7 @@
       </div>
       <div class="form-group">
         <label>Please describe yourself:</label>
-        <textarea class="form-control" rows="12" id="comment" placeholder="(Click to edit) What kind of personality best describes you?  What are your interests?  What are your hobbies?  What should your ideal match know about you?"></textarea>
+        <textarea class="form-control" rows="12" name="About" placeholder="(Click to edit) What kind of personality best describes you?  What are your interests?  What are your hobbies?  What should your ideal match know about you?"></textarea>
       </div>
         <hr style="margin-bottom:10px;margin-top:10px;"/>
         <div style="color:#4b2e83;font-size:15pt;padding-top:5px;margin-bottom:5px;">
@@ -64,7 +74,7 @@
         <div class="col-md-6">
           <div class="form-group">
             <select class="form-control" name="Major">
-              <option value="All languages" disabled selected>Major</option>
+              <option value="Major" disabled selected>Major</option>
               <option value="English">Anthropology</option>
               <option value="French">Applied math</option>
               <option value="Spanish">Astronomy</option>
@@ -85,7 +95,7 @@
           </div>
           <div class="form-group">
             <select class="form-control" name="Minor">
-              <option value="All languages" disabled selected>Minor</option>
+              <option value="Minor" disabled selected>Minor</option>
               <option value="English">Anthropology</option>
               <option value="French">Applied math</option>
               <option value="Spanish">Astronomy</option>
@@ -106,7 +116,7 @@
           </div>
           <div class="form-group">
             <select class="form-control" name="Year">
-              <option value="All languages" disabled selected>Year</option>
+              <option value="Year" disabled selected>Year</option>
               <option value="English">Freshman</option>
               <option value="French">Sophomore</option>
               <option value="Spanish">Junior</option>
@@ -124,7 +134,7 @@
         <div class="col-md-6">
           <div class="form-group">
             <select class="form-control" name="DegreeType">
-              <option value="All languages" disabled selected>Degree type</option>
+              <option value="DegreeType" disabled selected>Degree type</option>
               <option value="English">GED / HS diploma</option>
               <option value="Associates">Associates</option>
               <option value="Bachelors">Bachelors</option>
@@ -151,7 +161,7 @@
         <div class="col-md-6">
           <div class="form-group">
             <select class="form-control" name="Department">
-              <option value="All languages" disabled selected>Department</option>
+              <option value="Department" disabled selected>Department</option>
               <option value="English">Anthropology</option>
               <option value="French">Applied math</option>
               <option value="Spanish">Astronomy</option>
@@ -172,7 +182,7 @@
           </div>
           <div class="form-group">
             <select class="form-control" name="YearsAtUW">
-              <option value="All languages" disabled selected>Years at UW</option>
+              <option value="YearsAtUW" disabled selected>Years at UW</option>
               <option value="English">Less than one year</option>
               <option value="French">1-2</option>
               <option value="Spanish">3-5</option>
@@ -183,7 +193,7 @@
           </div>
           <div class="form-group">
             <select class="form-control" name="DegreeType">
-              <option value="All languages" disabled selected>Degree type</option>
+              <option value="DegreeType" disabled selected>Degree type</option>
               <option value="English">GED / HS diploma</option>
               <option value="Associates">Associates</option>
               <option value="Bachelors">Bachelors</option>
@@ -211,7 +221,7 @@
             <input type="text" class="form-control" name="Industry" placeholder="Industry">
           </div>
           <div class="form-group">
-            <textarea class="form-control" rows="4" name="Skills" placeholder="Skills faculty"></textarea>
+            <textarea class="form-control" rows="4" name="Skills" placeholder="Skills"></textarea>
           </div>
         </div>
       </div> <!-- End of faculty row -->
@@ -221,7 +231,7 @@
         <div class="col-md-6">
           <div class="form-group">
             <select class="form-control" name="Major">
-              <option value="All languages" disabled selected>Major</option>
+              <option value="Major" disabled selected>Major</option>
               <option value="English">Anthropology</option>
               <option value="French">Applied math</option>
               <option value="Spanish">Astronomy</option>
@@ -242,7 +252,7 @@
           </div>
           <div class="form-group">
             <select class="form-control" name="Minor">
-              <option value="All languages" disabled selected>Minor</option>
+              <option value="Minor" disabled selected>Minor</option>
               <option value="English">Anthropology</option>
               <option value="French">Applied math</option>
               <option value="Spanish">Astronomy</option>
@@ -263,7 +273,7 @@
           </div>
           <div class="form-group">
             <select class="form-control" name="Year">
-              <option value="All languages" disabled selected>Year</option>
+              <option value="Year" disabled selected>Year</option>
               <option value="English">Freshman</option>
               <option value="French">Sophomore</option>
               <option value="Spanish">Junior</option>
@@ -286,7 +296,7 @@
             <input type="text" class="form-control" placeholder="Occupation">
           </div>
           <div class="form-group">
-            <textarea class="form-control" rows="5" placeholder="Skills alumni"></textarea>
+            <textarea class="form-control" rows="5" placeholder="Skills"></textarea>
           </div>
         </div>
       </div> <!-- End of alumni row -->
@@ -297,7 +307,7 @@
       </div>
       <div class="form-group">
           <label>Please describe your ideal match:</label>
-          <textarea class="form-control" rows="12" placeholder="(Click to edit) What qualities do you look for? What are most important to you?  Describing in detail what you are looking for will help others connect with you."></textarea>
+          <textarea class="form-control" rows="12" name="Looking" placeholder="(Click to edit) What qualities do you look for? What are most important to you?  Describing in detail what you are looking for will help others connect with you."></textarea>
       </div>
       <hr style="margin-bottom:10px;margin-top:10px;"/>
 
@@ -308,13 +318,13 @@
       <div class="form-group">
         <label>What types of mentoring are you interested in?</label>
         <div class="checkbox">
-          <label><input type="checkbox" value="">Academic</label>
+          <label><input type="checkbox" name="Academic" value="Academic">Academic</label>
         </div>
         <div class="checkbox">
-          <label><input type="checkbox" value="">Career</label>
+          <label><input type="checkbox" name="Career" value="Career">Career</label>
         </div>
-        <div class="checkbox disabled">
-          <label><input type="checkbox" value="">Personal</label>
+        <div class="checkbox">
+          <label><input type="checkbox" name="Personal" value="Personal">Personal</label>
         </div>
       </div>
       <a href="home.php"><button class="btn btn-info"> Submit </button></a>
