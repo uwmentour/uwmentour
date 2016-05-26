@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>uwmentour</Name>
+    <ProjectGuid>{e01ea3dd-2a87-4803-8ff4-b6166140a237}</ProjectGuid>
+    <RootNamespace>
+    </RootNamespace>
+    <OutputType>Library</OutputType>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <Runtime>PHP</Runtime>
+    <RuntimeVersion>5.6</RuntimeVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="css\.DS_Store" />
+    <Compile Include="css\com.css" />
+    <Compile Include="css\home.css" />
+    <Compile Include="css\template.css" />
+    <Compile Include="images\blossom.jpg" />
+    <Compile Include="images\contact.png" />
+    <Compile Include="images\createprofile.png" />
+    <Compile Include="images\default.jpg" />
+    <Compile Include="images\facebookicon.png" />
+    <Compile Include="images\footer.jpg" />
+    <Compile Include="images\googleplusicon.png" />
+    <Compile Include="images\instagramicon.png" />
+    <Compile Include="images\janapan.jpg" />
+    <Compile Include="images\johndoe.jpg" />
+    <Compile Include="images\linkedinicon.png" />
+    <Compile Include="images\lucysky.jpg" />
+    <Compile Include="images\pinteresticon.png" />
+    <Compile Include="images\quad.png" />
+    <Compile Include="images\rexlink.jpg" />
+    <Compile Include="images\ronsour.jpg" />
+    <Compile Include="images\search.png" />
+    <Compile Include="images\signup.png" />
+    <Compile Include="images\staricon.png" />
+    <Compile Include="images\staroutlineicon.png" />
+    <Compile Include="images\suzallo.jpg" />
+    <Compile Include="images\Thumbs.db" />
+    <Compile Include="images\transparentpixel.png" />
+    <Compile Include="images\twittericon.png" />
+    <Compile Include="images\uwlogo.png" />
+    <Compile Include="images\youtubeicon.png" />
+    <Compile Include="activate.php" />
+    <Compile Include="background.html" />
+    <Compile Include="background.inc" />
+    <Compile Include="background.php" />
+    <Compile Include="home.inc" />
+    <Compile Include="home.php" />
+    <Compile Include="login.inc" />
+    <Compile Include="login.php" />
+    <Compile Include="logout.php" />
+    <Compile Include="messages.php" />
+    <Compile Include="myprofile.html" />
+    <Compile Include="myprofile.inc" />
+    <Compile Include="myprofile.php" />
+    <Compile Include="mysqlconnect.php" />
+    <Compile Include="profile.html" />
+    <Compile Include="profile.inc" />
+    <Compile Include="profile.php" />
+    <Compile Include="README.md" />
+    <Compile Include="search.html" />
+    <Compile Include="search.inc" />
+    <Compile Include="search.php" />
+    <Compile Include="signup.inc" />
+    <Compile Include="signup.php" />
+    <Compile Include="template.php" />
+    <Compile Include="uwmentou_MENTOUR.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="css" />
+    <Folder Include="images" />
+    <Folder Include="js\" />
+    <Folder Include="views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\controller.js" />
+    <Content Include="css\messages.css" />
+    <Content Include="js\identity-services.js" />
+    <Content Include="js\index.js" />
+    <Content Include="views\conversation-list-header.js" />
+    <Content Include="views\conversation-list.js" />
+    <Content Include="views\message-composer.js" />
+    <Content Include="views\message-list.js" />
+    <Content Include="views\message.js" />
+    <Content Include="views\titlebar.js" />
+    <Content Include="views\user-list-dialog.js" />
+  </ItemGroup>
+</Project>
