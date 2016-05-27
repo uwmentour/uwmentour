@@ -16,8 +16,8 @@
     <!-- Step 1: Config -->
     <script>
     window.layerSampleConfig = {
-        appId: 'layer:///apps/staging/90f98228-222f-11e6-a25e-59700300610c',
-        userId: window.prompt('Please enter a user name', 'Tutorial User')
+        appId: 'layer:///apps/staging/90f98228-222f-11e6-a25e-59700300610c',        
+        userId: 'Me'
     };
     window.layerSampleApp = {};
     </script>
